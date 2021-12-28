@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 // import './index.css';
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="p-5 mt-10 flex flex-col justify-center max-w-[800px]">
+      <main className="p-5 mt-10 flex flex-col justify-center items-center max-w-[800px]">
         <h1 className="text-7xl text-center">
           Welcome to{' '}
           <a href="https://nextjs.org" className="text-blue-600 hover:underline">
@@ -22,6 +23,12 @@ export default function Home() {
           <code className="bg-slate-100 px-1 py-1 rounded-md font-mono text-base font-semibold">
             pages/index.tsx
           </code>
+        </p>
+        <p>
+          Go on to read{' '}
+          <Link href="/posts/first-post">
+            <a className="text-blue-600 hover:underline">first post!</a>
+          </Link>
         </p>
 
         <div className="grid grid-cols-2 grid-rows-2 mt-10 gap-9 text-xl text-gray-700">
