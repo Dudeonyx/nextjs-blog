@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import Link from 'next/link';
 // import './index.css';
 
@@ -64,7 +65,7 @@ export default function Home() {
           rel="noopener noreferrer"
           className="flex items-center"
         >
-          Powered by <img src="/vercel.svg" alt="Vercel" className="h-4" />
+          Powered by <Image src="/vercel.svg" alt="Vercel" className="h-4" />
         </a>
       </footer>
     </div>
