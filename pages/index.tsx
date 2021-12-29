@@ -65,7 +65,8 @@ export default function Home() {
           rel="noopener noreferrer"
           className="flex items-center"
         >
-          Powered by <Image src="/vercel.svg" alt="Vercel" className="h-4" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          Powered by <img src="/vercel.svg" alt="Vercel" className="h-4" />
         </a>
       </footer>
     </div>
